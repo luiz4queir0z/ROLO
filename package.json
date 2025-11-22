@@ -9,8 +9,8 @@
     "concurrently": "^9.2.1"
   },
   "scripts": {
-    "start:backend": "cd back && ./mvnw spring-boot:run",
+    "dev:back": "cd back && ./mvnw spring-boot:run",
     "dev:front": "cd front && yarn dev",
-    "dev": "concurrently \"yarn:start:backend\" \"yarn:start:frontend\""
+    "dev": "concurrently \"yarn:dev:back\" \"yarn:dev:front\""
   }
 }
