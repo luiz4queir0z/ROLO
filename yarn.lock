@@ -1330,14 +1330,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ROLO@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "ROLO@workspace:."
-  dependencies:
-    concurrently: "npm:^9.2.1"
-  languageName: unknown
-  linkType: soft
-
 "acorn-jsx@npm:^5.3.2":
   version: 5.3.2
   resolution: "acorn-jsx@npm:5.3.2"
@@ -3935,6 +3927,14 @@ __metadata:
   checksum: 10c0/4eff0d4a5f9383566c7d7ec437b671cc51b25963bd61bf127c3f3d3f68e44a026d99b8d2f1ad344afff8d278a8fe70a8ea092650a716d22287e8bef7126bb2fa
   languageName: node
   linkType: hard
+
+"rolo@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "rolo@workspace:."
+  dependencies:
+    concurrently: "npm:^9.2.1"
+  languageName: unknown
+  linkType: soft
 
 "run-parallel@npm:^1.1.9":
   version: 1.2.0

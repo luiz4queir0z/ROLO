@@ -1,5 +1,5 @@
 {
-  "name": "ROLO",
+  "name": "rolo",
   "packageManager": "yarn@4.9.1",
   "workspaces": [
     "front",

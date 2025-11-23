@@ -4,6 +4,7 @@ const palette: PaletteOptions = {
   mode: 'dark',
   primary: {
     main: '#FE733B',
+    dark: '#FE733B33',
     contrastText: '#FFFFFFDE',
   },
   background: {
