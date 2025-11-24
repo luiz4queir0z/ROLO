@@ -44,7 +44,7 @@ const inputSx = {
 };
 
 export default function Auth() {
-  const [mode, setMode] = useState<'login' | 'register'>('register');
+  const [mode, setMode] = useState<'login' | 'register'>('login');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -98,16 +98,17 @@ export default function Auth() {
             alignItems: 'center',
           }}
         >
-          <IconButton
+          <Box
+            component='a'
+            href='/'
             aria-label='voltar'
-            onClick={() => console.log('Voltar')}
             sx={{
               color: 'white',
               '&:hover': { backgroundColor: 'rgba(255, 255, 255, 0.1)' },
             }}
           >
             <ArrowBack sx={{ color: 'white' }} />
-          </IconButton>
+          </Box>
           <Typography variant='body1' sx={{ color: 'white', ml: 1 }}>
             voltar
           </Typography>
