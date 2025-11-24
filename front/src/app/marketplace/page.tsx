@@ -29,6 +29,7 @@ export default function MarketPlace() {
               backgroundColor: '#D9D9D9',
               width: '100%',
               objectFit: 'cover',
+              height: { sm: 'auto', md: 340, lg: 410 },
             }}
           />
         ))}
