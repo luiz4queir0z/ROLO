@@ -2,7 +2,7 @@
 'use client';
 
 import { useParams } from 'next/navigation';
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   Box,
   Typography,
@@ -143,6 +143,14 @@ export default function ChatView() {
   const [input, setInput] = useState('');
   const [drawerUserOpen, setDrawerUserOpen] = useState(false);
   const [drawerOtherOpen, setDrawerOtherOpen] = useState(false);
+
+  const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (messagesEndRef.current) {
+      messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [messages]);
 
   if (!chat) {
     return (
@@ -358,8 +366,8 @@ export default function ChatView() {
                 color: '#fff',
                 p: msg.type === 'product' ? 0 : 1.5,
                 borderRadius: msg.self
-                  ? '16px 0 16px 16px'
-                  : '0 16px 16px 16px',
+                  ? '16px 16px 0px 16px'
+                  : '16px 16px 16px 0px',
                 fontSize: 15,
                 wordBreak: 'break-word',
                 boxShadow:
@@ -372,6 +380,7 @@ export default function ChatView() {
             </Box>
           </Box>
         ))}
+        <div ref={messagesEndRef}/>
       </Box>
 
       {/* Campo de envio de mensagem */}
