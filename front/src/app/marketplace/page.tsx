@@ -23,6 +23,7 @@ export default function MarketPlace() {
               width: '100%',
               objectFit: 'cover',
               height: { sm: 'auto', md: 340, lg: 410 },
+              flex: '0 0 100%',
             }}
           />
         ))}

@@ -9,11 +9,12 @@ export default function SearchBar({ placeholder }: { placeholder?: string }) {
       size='small'
       hiddenLabel
       placeholder={placeholder}
+      sx={{ width: { xs: '100%', md: '50%' }, alignSelf: 'center' }}
       slotProps={{
         input: {
           startAdornment: (
             <InputAdornment position='start'>
-              <Search sx={{ color: '#FE733B' }}/>
+              <Search sx={{ color: '#FE733B' }} />
             </InputAdornment>
           ),
         },
