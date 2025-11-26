@@ -257,8 +257,8 @@ export default function Product({
             sx={{
               display: 'grid',
               gridTemplateColumns: {
-                xs: 'repeat(2, 1fr)',
-                sm: 'repeat(3, 1fr)',
+                xs: 'repeat(1, 1fr)',
+                sm: 'repeat(2, 1fr)',
                 md: 'repeat(4, 1fr)',
               },
               gap: 2,
@@ -282,12 +282,13 @@ export default function Product({
                 >
                   <CardMedia
                     component='img'
-                    height='180'
                     image={item.images.main}
                     alt={item.title}
                     sx={{
                       objectFit: 'cover',
                       backgroundColor: 'grey.100',
+                      maxHeight: '12rem',
+                      aspectRatio: '1 / 1',
                     }}
                   />
                   <Box sx={{ p: 1.5 }}>
