@@ -96,7 +96,7 @@ const productsData: ProductProps[] = [
     seller: {
       id: 2,
       name: 'Maria Silva',
-      avatar: 'https://placehold.co/100/FFD700/D1D4DA',
+      avatar: 'https://placehold.co/100/FFD700/FFD700',
     },
 
     location: {
@@ -134,7 +134,7 @@ const productsData: ProductProps[] = [
     seller: {
       id: 3,
       name: 'Carlos Pereira',
-      avatar: 'https://placehold.co/100/87CEEB/D1D4DA',
+      avatar: 'https://placehold.co/100/87CEEB/87CEEB',
     },
 
     location: {
@@ -172,7 +172,7 @@ const productsData: ProductProps[] = [
     seller: {
       id: 4,
       name: 'Ana Souza',
-      avatar: 'https://placehold.co/100/FF6347/FFFACD',
+      avatar: 'https://placehold.co/100/FF6347/FF6347',
     },
 
     location: {
@@ -210,7 +210,7 @@ const productsData: ProductProps[] = [
     seller: {
       id: 5,
       name: 'Paulo Lima',
-      avatar: 'https://placehold.co/100/40E0D0/ffffff',
+      avatar: 'https://placehold.co/100/40E0D0/40E0D0',
     },
 
     location: {
@@ -248,7 +248,7 @@ const productsData: ProductProps[] = [
     seller: {
       id: 6,
       name: 'Fernanda Costa',
-      avatar: 'https://placehold.co/100/8A2BE2/ffffff',
+      avatar: 'https://placehold.co/100/8A2BE2/8A2BE2',
     },
 
     location: {
