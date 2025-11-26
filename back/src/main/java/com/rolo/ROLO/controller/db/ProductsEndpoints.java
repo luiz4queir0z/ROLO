@@ -8,10 +8,10 @@ import com.rolo.ROLO.model.dto.ProductRequest;
 
 @RestController
 @RequestMapping("/db/products/")
-public class ProductsEndpoints extends BaseEndpoints<ProductRequest> {
+public class ProductsEndpoints extends BaseEndpoints<ProductRequest>{
 	
 	public ProductsEndpoints() {
-		super("PRODUTO", ProductRequest.class);
+		super("PRODUCTS", ProductRequest.class);
 	}
-	
+
 }

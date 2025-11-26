@@ -11,7 +11,7 @@ import com.rolo.ROLO.model.dto.UserRequest;
 public class UsersEndpoints extends BaseEndpoints<UserRequest> {
 
 	public UsersEndpoints() {
-		super("USUARIOS", UserRequest.class);
+		super("USERS", UserRequest.class);
 	}
 	
 }

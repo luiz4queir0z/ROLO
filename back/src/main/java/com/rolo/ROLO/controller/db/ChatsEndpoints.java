@@ -11,7 +11,7 @@ import com.rolo.ROLO.model.dto.ChatRequest;
 public class ChatsEndpoints extends BaseEndpoints<ChatRequest> {
 
 	public ChatsEndpoints() {
-		super("CHAT", ChatRequest.class);
+		super("CHATS", ChatRequest.class);
 	}
 
 }

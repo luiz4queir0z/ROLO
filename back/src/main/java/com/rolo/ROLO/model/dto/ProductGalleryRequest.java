@@ -5,9 +5,10 @@ import java.sql.Timestamp;
 import lombok.Getter;
 import lombok.Setter;
 
-public class ChatRequest {
+public class ProductGalleryRequest {
 	@Getter @Setter public int id;
-	@Getter @Setter public int user1_id;
-	@Getter @Setter public int user2_id;
+	@Getter @Setter public int product_id;
+	@Getter @Setter public String image_url;
+	@Getter @Setter public boolean is_title;
 	@Getter @Setter public Timestamp created_at;
 }

@@ -41,8 +41,12 @@ public abstract class BaseEndpoints<T> {
 	@GetMapping("{id}")
 	public ResponseEntity<T> getById(@PathVariable int id) {
 		try {
-			T queryResult = ResultMapper.mapToList(service.getByField(tableName, "id", id), type).get(0);
-			return ResponseEntity.status(HttpStatus.OK).body(queryResult);
+			List<T> queryResult = ResultMapper.mapToList(service.getByField(tableName, "id", id), type);
+			
+			if(queryResult.size() == 0)
+				return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+			
+			return ResponseEntity.status(HttpStatus.OK).body(queryResult.get(0));
 		} catch(Exception e) {
 			e.printStackTrace();
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();

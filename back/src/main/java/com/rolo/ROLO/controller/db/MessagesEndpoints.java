@@ -4,14 +4,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.rolo.ROLO.controller.BaseEndpoints;
-import com.rolo.ROLO.model.dto.GalleryRequest;
+import com.rolo.ROLO.model.dto.MessageRequest;
 
 @RestController
-@RequestMapping("/db/galleries/")
-public class GalleriesEndpoints extends BaseEndpoints<GalleryRequest> {
+@RequestMapping("/db/messages/")
+public class MessagesEndpoints extends BaseEndpoints<MessageRequest> {
 	
-	public GalleriesEndpoints() {
-		super("GALERIA", GalleryRequest.class);
+	public MessagesEndpoints() {
+		super("MESSAGES", MessageRequest.class);
 	}
 	
 }

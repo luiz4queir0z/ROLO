@@ -11,7 +11,7 @@ import com.rolo.ROLO.model.dto.CategoryRequest;
 public class CategoriesEndpoints extends BaseEndpoints<CategoryRequest> {
 
 	public CategoriesEndpoints() {
-		super("CATEGORIA", CategoryRequest.class);
+		super("CATEGORIES", CategoryRequest.class);
 	}
 	
 }
