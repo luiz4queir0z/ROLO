@@ -20,6 +20,7 @@ import {
 } from '@mui/material';
 import Link from 'next/link';
 import { ReactNode, useState } from 'react';
+import NavMenuItem from './navMenuItem';
 
 interface layoutProps {
   children?: ReactNode;
@@ -127,22 +128,29 @@ export default function RoloLayout({ children }: layoutProps) {
             gap: 2,
           }}
         >
-          <IconButton aria-label='Rolos' size='large' sx={{ gap: 2 }}>
-            <SwapHoriz fontSize='inherit' />
-            <Typography variant='body2'>Visualizar Rolos</Typography>
-          </IconButton>
-          <IconButton aria-label='Marketplace' size='large' sx={{ gap: 2 }}>
-            <StoreOutlined fontSize='inherit' />
-            <Typography variant='body2'>Marketplace</Typography>
-          </IconButton>
-          <IconButton aria-label='Galeria' size='large' sx={{ gap: 2 }}>
-            <CollectionsOutlined fontSize='inherit' />
-            <Typography variant='body2'>Galeria</Typography>
-          </IconButton>
-          <IconButton aria-label='Configurações' size='large' sx={{ gap: 2 }}>
-            <SettingsOutlined fontSize='inherit' />
-            <Typography variant='body2'>Configurações</Typography>
-          </IconButton>
+          <NavMenuItem                         //novos componentes do menu de navegação :]
+            icon={<SwapHoriz fontSize="inherit" />}
+            text="Visualizar Rolos"
+            href="/rolos"
+          />
+
+          <NavMenuItem
+            icon={<StoreOutlined fontSize="inherit" />}
+            text="Marketplace"
+            href="/marketplace"
+          />
+
+          <NavMenuItem
+            icon={<CollectionsOutlined fontSize="inherit" />}
+            text="Galeria"
+            href="/galeria"
+          />
+
+          <NavMenuItem
+            icon={<SettingsOutlined fontSize="inherit" />}
+            text="Configurações"
+            href="/configuracoes"
+          />
         </Toolbar>
       </Drawer>
     </>
